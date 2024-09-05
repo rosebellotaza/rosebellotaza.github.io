@@ -10990,28 +10990,27 @@ section.resume-section .resume-section-content {
 /*Skills Transition*/
 .progress-bar {
   width: 0;
-  height: 20px; /* Adjust as needed */
-  background-color: #4CAF50; /* Adjust color as needed */
-  transition: width 1s ease; /* Adjust duration and easing */
+  height: 20px;
+  background-color: #4CAF50; 
+  transition: width 1s ease; 
 }
 
 
 /*Contact*/
-
 .contact-container {
     display: flex;
-    align-items: stretch; /* Ensure both columns are equal height */
+    align-items: stretch; 
     justify-content: space-between;
   }
   
   .contact-info {
-    flex: 1; /* Takes up equal space as the image */
+    flex: 1; 
     margin-right: 20px;
   }
   
   .info-box {
-    background: #f8f9fa; /* Light background for each box */
-    border: 1px solid #ddd; /* Light border */
+    background: #f8f9fa; 
+    border: 1px solid #ddd; 
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
@@ -11032,7 +11031,7 @@ section.resume-section .resume-section-content {
   }
   
   .contact-image {
-    flex: 1; /* Takes up equal space as the contact info */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11118,9 +11117,9 @@ section.resume-section .resume-section-content {
   
   /*Portfolio Images*/
   .portfolio-image {
-    margin-bottom: 20px; /* Adds spacing between the images */
-    border-radius: 8px; /* Optional: Rounds the corners of the images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
   }
 
 /*About*/
@@ -11234,12 +11233,12 @@ font-size: 13px;
 }
 
 .footer {
-  background-color: #f8f9fa; /* Light grey background color */
-  text-align: center; /* Center the text */
-  padding: 1rem 0; /* Add padding to the top and bottom */
-  margin-top: auto; /* Ensures the footer is pushed to the bottom */
-  font-size: 0.9rem; /* Adjust font size */
-  color: #6c757d; /* Set a muted text color */
+  background-color: #f8f9fa; 
+  text-align: center; 
+  padding: 1rem 0; 
+  margin-top: auto; 
+  font-size: 0.9rem; 
+  color: #6c757d; 
 }
 
 /* Portfolio Section Styling */
@@ -11316,11 +11315,103 @@ font-size: 13px;
   color: #bd5d38;
 }
 
+/*RESUME*/
+/* Section Styling */
+.resume-section {
+  padding: 50px 0;
+}
 
+.section-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+/* Resume Category Styling */
+.resume-category {
+  margin-bottom: 60px;
+}
 
+.resume-category-heading {
+  font-size: 1.8rem;
+  color: #bd5d38; /* Updated theme color */
+  border-bottom: 2px solid #bd5d38;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
 
+/* Resume Content Styling */
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 30px; /* Space for vertical line */
+  color: #bd5d38;
+}
 
+/* Vertical Line */
+.resume-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #bd5d38; /* Theme color */
+}
 
+/* Individual Resume Detail */
+.resume-item-detail {
+  position: relative;
+  background-color: #1c1c1c; /* Slightly lighter dark background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-left: 20px; /* Space between items and the vertical line */
+  color: white;
+}
 
+.resume-item-detail::before {
+  content: '●';
+  position: absolute;
+  left: -25px; /* Align with vertical line */
+  top: 20px; /* Adjust position */
+  color: #bd5d38; /* Dot color */
+  font-size: 1.2rem;
+}
 
+/* Resume Title */
+.resume-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+  color: #bd5d38;
+}
+
+/* Date Badge */
+.education-date {
+  display: inline-block;
+  background-color: #444; /* Dark badge background */
+  color: #ffffff; /* White text */
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* List Styling */
+.resume-description {
+  font-size: 1rem;
+  color: #dcdcdc; /* Light gray for text */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Links */
+a {
+  color: #bd5d38; /* Updated theme color */
+  text-decoration: none;
+}
