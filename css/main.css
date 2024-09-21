@@ -11243,11 +11243,11 @@ font-size: 13px;
 
 /* Portfolio Section Styling */
 .portfolio-image {
-  width: 100%;
-  max-width: 300px;
+  width: 500px;
+  height: auto;
   border-radius: 10px;
+  object-fit: contain;
 }
-
 
 .card {
   border: none;
@@ -11415,3 +11415,56 @@ a {
   color: #bd5d38; /* Updated theme color */
   text-decoration: none;
 }
+
+/*Certificates*/
+#certificates h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+  /* Responsive carousel */
+  #certificateCarousel {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+/* Adjust the certificate size */
+#certificateCarousel .carousel-item img {
+  width: 100%; /* Change this to control width (e.g., 80% of container's width) */
+  max-height: 500px; /* Set a maximum height */
+  margin: 0 auto; /* Center the image */
+  object-fit: contain; /* Maintain aspect ratio and avoid distortion */
+}
+
+/* Center the carousel arrows vertically */
+.carousel-control-prev, 
+.carousel-control-next {
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect centering */
+  width: 50px; /* Adjust the width for better visibility */
+  height: 50px; /* Adjust height */
+  background-color: rgba(0, 0, 0, 0.1); /* Slight background for visibility */
+  border-radius: 50%; /* Make the arrows circular */
+}
+
+/* Make the arrow icons black */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  filter: invert(1); /* Change the arrow color to black */
+  width: 30px; /* Adjust size for better visibility */
+  height: 30px;
+}
+
+/* Optional: Change the hover effect */
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Darker on hover */
+}
+
+/*Animations*/
+html {
+  scroll-behavior: smooth;
+}
+
+
