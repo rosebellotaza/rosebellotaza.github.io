@@ -11243,7 +11243,8 @@ font-size: 13px;
 
 /* Portfolio Section Styling */
 .portfolio-image {
-  width: 500px;
+  margin-top: 10px;
+  width: auto;
   height: auto;
   border-radius: 10px;
   object-fit: contain;
