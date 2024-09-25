@@ -11450,15 +11450,15 @@ a {
 /* Make the arrow icons black */
 .carousel-control-prev-icon, 
 .carousel-control-next-icon {
-  filter: invert(1); /* Change the arrow color to black */
-  width: 30px; /* Adjust size for better visibility */
+  filter: invert(1);
+  width: 30px; 
   height: 30px;
 }
 
 /* Optional: Change the hover effect */
 .carousel-control-prev:hover, 
 .carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Darker on hover */
+  background-color: rgba(0, 0, 0, 0.2); 
 }
 
 /*Animations*/
