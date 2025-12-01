@@ -11466,4 +11466,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Keep project screenshots inside the viewport */
+.modal .carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;      /* at most 70% of the viewport height */
+  object-fit: contain;   /* show the whole screenshot, no cropping */
+}
+
+/* Optional: keep modal scrollable if still taller than screen */
+.modal-body {
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  max-width: 900px;      /* you can change this to 700px, 800px, etc. */
+}
 

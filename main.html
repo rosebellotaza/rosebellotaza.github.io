@@ -327,78 +327,231 @@
                 
                 <hr class="m-0" />
                 <!-- Portfolio Section -->
-                <section class="resume-section" id="education">
+                    <section class="resume-section" id="education">
                     <div class="resume-section-content">
                         <h2 class="mb-5 text-center">Portfolio</h2>
 
-                        <div class="text-center mb-4">
-                            <button class="filter-btn active" data-filter="all">Project</button>
-                            <button class="filter-btn" data-filter="app">Images</button>
+                        <div class="row justify-content-center g-4">
+
+                        <!-- Project 1: NomNom -->
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                            <img
+                            src="images/project.png"  
+                            alt="NomNom project"
+                            class="img-fluid portfolio-image shadow-sm rounded"
+                            data-bs-toggle="modal"
+                            data-bs-target="#nomnomModal"
+                            >
+                            <h3 class="mt-3">NomNom</h3>
                         </div>
 
-                        <!-- All Section -->
-                        <div class="portfolio-items all">
-                            <div class="row justify-content-center mb-5">
-                                <!-- Left column: NomNom Project -->
-                                <div class="col-md-4 d-flex flex-column align-items-center"> 
-                                    <img src="images/project.png" alt="Portfolio Image 4" class="img-fluid portfolio-image shadow-sm rounded">
-                                    <h3 class="mt-3">NomNom</h3>
-                                    <br>
-                                </div>
-                            
-                            </div>
+                        <!-- Project 2: Waste Wise -->
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                            <img
+                            src="images/wastewise.png"
+                            alt="Waste Wise project"
+                            class="img-fluid portfolio-image shadow-sm rounded"
+                            data-bs-toggle="modal"
+                            data-bs-target="#wasteWiseModal"
+                            >
+                            <h3 class="mt-3">Waste Wise</h3>
                         </div>
 
-                        <!-- App Section -->
-                        <div class="portfolio-items app hide-element">
-                            <div class="container">
-                                <div class="row g-4">
-                                    <!-- Card 1 -->
-                                    <div class="col-md-4">
-                                        <div class="card shadow-sm">
-                                            <img src="images/1.png" class="card-img-top" alt="Project Image 1">
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Card 2 -->
-                                    <div class="col-md-4">
-                                        <div class="card shadow-sm">
-                                            <img src="images/2.png" class="card-img-top" alt="Project Image 1">
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Card 3 -->
-                                    <div class="col-md-4">
-                                        <div class="card shadow-sm">
-                                            <img src="images/6.png" class="card-img-top" alt="Project Image 2">
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Card 4 -->
-                                    <div class="col-md-4">
-                                        <div class="card shadow-sm">
-                                            <img src="images/3.png" class="card-img-top" alt="Project Image 2">
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Card 5 -->
-                                    <div class="col-md-4">
-                                        <div class="card shadow-sm">
-                                            <img src="images/4.png" class="card-img-top" alt="Project Image 3">
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Card 6 -->
-                                    <div class="col-md-4">
-                                        <div class="card shadow-sm">
-                                            <img src="images/5.png" class="card-img-top" alt="Project Image 4">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                      
+                        <!-- Project 3: Helmet Detection -->
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                            <img
+                            src="images/helmet.jpg"  
+                            alt="Helmet Detection project"
+                            class="img-fluid portfolio-image shadow-sm rounded"
+                            data-bs-toggle="modal"
+                            data-bs-target="#helmetModal"
+                            >
+                            <h3 class="mt-3">Helmet Detection</h3>
+                        </div>
+
+                        <!-- Project 4: THESIS SYSTEM  -->
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                            <img
+                                src="images/thesis1.png"
+                                alt="Thesis System project"
+                                class="img-fluid portfolio-image shadow-sm rounded"
+                                data-bs-toggle="modal"
+                                data-bs-target="#thesisModal"
+                            >
+                            <h3 class="mt-3">THESIS SYSTEM</h3>
+                        </div>
+
+                        </div>
                     </div>
-                </section>
+                    </section>
+                <!-- NomNom Modal -->
+                    <div class="modal fade" id="nomnomModal" tabindex="-1" aria-labelledby="nomnomModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <div>
+                                <h5 class="modal-title" id="nomnomModalLabel">NomNom</h5>
+                                <small class="text-muted d-block mt-1">
+                                Mobile app that helps users discover and save local food spots.
+                                </small>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            <div id="nomnomCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="images/1.png" class="d-block w-100" alt="NomNom screen 1">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/2.png" class="d-block w-100" alt="NomNom screen 2">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/3.png" class="d-block w-100" alt="NomNom screen 3">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/4.png" class="d-block w-100" alt="NomNom screen 4">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/5.png" class="d-block w-100" alt="NomNom screen 5">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/6.png" class="d-block w-100" alt="NomNom screen 6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#nomnomCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#nomnomCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Waste Wise Modal -->
+                    <div class="modal fade" id="wasteWiseModal" tabindex="-1" aria-labelledby="wasteWiseModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title" id="wasteWiseModalLabel">Waste Wise</h5>
+                            <small class="text-muted d-block mt-1">
+                            Waste management and reporting platform for cleaner communities.
+                            </small>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="wasteWiseCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="images/ww1.png" class="d-block w-100" alt="Waste Wise screen 1">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/ww2.png" class="d-block w-100" alt="Waste Wise screen 2">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/ww3.png" class="d-block w-100" alt="Waste Wise screen 3">
+                                </div>
+                                 <div class="carousel-item">
+                                <img src="images/ww4.png" class="d-block w-100" alt="Waste Wise screen 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#wasteWiseCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#wasteWiseCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Helmet Detection Modal -->
+                    <div class="modal fade" id="helmetModal" tabindex="-1" aria-labelledby="helmetModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <div>
+                                <h5 class="modal-title" id="helmetModalLabel">Helmet Detection</h5>
+                                <small class="text-muted d-block mt-1">
+                                Computer vision system that flags riders not wearing helmets.
+                                </small>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                        <div class="modal-body">
+                            <div id="helmetCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="images/h1.jpg" class="d-block w-100" alt="Helmet Detection screen 1">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/h2.jpg" class="d-block w-100" alt="Helmet Detection screen 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#helmetCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#helmetCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Thesis System Modal -->
+                    <div class="modal fade" id="thesisModal" tabindex="-1" aria-labelledby="thesisModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                       <div class="modal-header">
+                            <div>
+                                <h5 class="modal-title" id="thesisModalLabel">Thesis System</h5>
+                                <small class="text-muted d-block mt-1">
+                                Predictive network traffic analytics dashboard for CSU student Wi-Fi.
+                                </small>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            <div id="thesisCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="images/thesis1.png" class="d-block w-100" alt="Thesis System screen 1">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/thesis2.png" class="d-block w-100" alt="Thesis System screen 2">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#thesisCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#thesisCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
                 <hr class="m-0" />
                 <section class="resume-section" id="certificates">
                     <div class="resume-section-content">
